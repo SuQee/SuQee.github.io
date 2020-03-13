@@ -29,6 +29,12 @@
             }
              ,0)
         );
+
+data.stat={
+    max:reduce(data,(a,b)=>a>b.dredit?a:b.dredit,)
+    ,min:reduce(data,(a,b)=>a<b?a:b.dredit)
+    ,total:reduce(data,(a,b)=>a+b.dredit,0)
+}
     </script>
     
 </body>
