@@ -31,7 +31,7 @@
         );
 
 data.stat={
-    max:reduce(data,(a,b)=>a>b.dredit?a:b.credit,)
+    max:reduce(data,(a,b)=>a>b.credit?a:b.credit,)
     ,min:reduce(data,(a,b)=>a<b?a:b.credit)
     ,total:reduce(data,(a,b)=>a+b.credit,0)
 }
